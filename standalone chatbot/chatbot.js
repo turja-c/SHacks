@@ -1,16 +1,59 @@
-let botContent = "";
+let botContent = `
+        <div class='title-bar'>
+            <a id='title'><strong>Scott</strong></a>
+            <div id="minimize"></div>
+        </div>
+        <main id='main'>
+            <div id="lastAvatar" class="avatar"><img src="scotiabank_logo.png" width="25" height="25" class="center"></div>
+            <div class="message left" id="bot"><span id="bot-response">Hi, I am Scott the Accessibility Assistant. How will I help you today?</span></div>
+        </main>
+        <div id ='user-bar'>
+                <div>
+                    <input id='input' type='text' placeholder='Ask us anything'</input>
+                </div>
+                <div id='speak'> <i class='material-icons'>mic</i> </div>
+                <button type='button' id ='send' >Send</button>
+        </div>
+`;
 
 let botLogo = `<div id="bot-logo"></div>`
 
+let scriptDys = [
+    "Hi, I am Scott the Accessibility Assistant, how will I help you today?",
+    "You have one VISA card. Would you wish to pay with this card?",
+    "You have a Student Debit account and a Momentum Savings account. Would you wish to pay with the Student Debit account?",
+    "$456.01",
+    "Transaction complete. You paid $56.02 from your Student Debit account to your VISA card. Your student Debit Card has $399.99 and your VISA card has a credit of $0."
+]
+
+let scriptVis = [
+    "Hi, I am Scott the Accessibility Assistant, how will I help you today?",
+    "On it. Would you wish to make the website text larger?",
+    "Sure. Would you wish to increase or decrease the contrast of the screen?",
+    "On it. Are you colorblind?",
+    "Glad to be of help!"
+]
+
+let ctr = 0;
+let first = true;
+
 document.addEventListener("DOMContentLoaded", () => {
     // Toggle chatbot
-    addChatbotClose();
+    addChatbotOpen(document.getElementById("chatbot"));
 });
 
 function pushInput(input){
-    // Output placeholder; Replace with next item in bot script
-    console.log("Getting pushed");
-    let output = "I would like an extra large Starbucks Star Drink, green tea matcha latte and a sausage breakfast sandwich";
+    // Replace with next item in bot script
+    ctr++;
+    let output = scriptVis[ctr];
+    if(ctr===2){
+        let bode = document.getElementById("bode");
+        bode.style.backgroundImage = "url('../src/res/landingbig.png')";
+    }
+    else if(ctr===3){
+        let bode = document.getElementById("bode");
+        bode.style.backgroundImage = "url('../src/res/landingbigcontrast.png')";
+    }
     const mainDiv = document.getElementById("main");
     if (input != null) {
         let userDiv = document.createElement("div");
@@ -92,6 +135,10 @@ function addChatbotClose(){
 }
 
 function openChatbot() {
+    if(first){
+        first=false;
+        speak(scriptVis[ctr]);
+    }
     let chatbot = document.getElementById("chatbot");
     var id = setInterval(frame, 3);
     var pos = 5;
