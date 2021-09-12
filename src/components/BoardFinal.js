@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Board(props) {
+function BoardFinal(props) {
 
     const drop = e => {
         e.preventDefault();
@@ -22,7 +22,7 @@ function Board(props) {
             className={props.className}
             onDrop={drop}
             onDragOver={dragOver}
-            style={{backgroundColor: 'red', borderStyle: 'dashed' }}
+            style={{backgroundColor: '#808080', borderStyle: 'double' }}
         >
             {props.children}
 
@@ -30,4 +30,4 @@ function Board(props) {
     )
 }
 
-export default Board
+export default BoardFinal

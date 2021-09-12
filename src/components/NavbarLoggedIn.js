@@ -9,12 +9,13 @@ import {
     Link
   } from "react-router-dom";
 
-function NavbarOne() {
+function NavbarLoggedIn() {
     return (
       <div>
         <Navbar expand="lg" style={{marginTop: '-0.5rem', marginBottom: '-0.9rem', color: '#FAFBFD'}}>
             <Container>
-              <Navbar.Brand style={{fontSize: '1.5rem', color: '#000', borderBottom: '2px solid red'}}>Personal</Navbar.Brand>
+            <Navbar.Brand href="./images/scotiabank.svg" style={{marginRight: '2rem'}}>
+                <img src="images/scotiabank.svg" style={{width: '200px'}}/></Navbar.Brand>
               <Navbar.Brand style={{fontSize: '1.5rem', color: '#808080'}}>Small Business</Navbar.Brand>
               <Navbar.Brand style={{fontSize: '1.5rem', color: '#808080'}}>Commercial</Navbar.Brand>
               <Navbar.Brand style={{fontSize: '1.5rem', color: '#808080'}}>Global Markets</Navbar.Brand>
@@ -32,4 +33,4 @@ function NavbarOne() {
 }
 
 
-export default NavbarOne;
+export default NavbarLoggedIn;

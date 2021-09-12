@@ -1,6 +1,8 @@
 import React from 'react'
 import Board from '../components/Board';
 import Card from '../components/Card';
+import HomePageCenter from '../components/HomePageCenter';
+import HomePageIntro from '../components/HomePageIntro';
 import NavbarOne from '../components/NavbarOne';
 import NavbarSecond from '../components/NavbarSecond';
 import NavbarThird from '../components/NavbarThird';
@@ -12,19 +14,9 @@ function Home() {
             <NavbarOne />
             <NavbarSecond />
             <NavbarThird />
-            <main className="flexbox">
-            <Board id="board-1" className="board">
-                <Card id="card-1" draggable="true">
-                test2
-                </Card>
-            </Board>
-
-            <Board id="board-2" className="board">
-                <Card id="card-2" draggable="true">
-                test3
-                </Card>
-            </Board>
-            </main>
+            <HomePageCenter />
+            <HomePageIntro />
+            
         </div>
     )
 }
