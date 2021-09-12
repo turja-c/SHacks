@@ -45,7 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
 function pushInput(input){
     // Replace with next item in bot script
     ctr++;
-    let output = scriptDys[ctr];
+    let output = scriptVis[ctr];
+    if(ctr===2){
+        let bode = document.getElementById("bode");
+        bode.style.backgroundImage = "url('../src/res/landingbig.png')";
+    }
+    else if(ctr===3){
+        let bode = document.getElementById("bode");
+        bode.style.backgroundImage = "url('../src/res/landingbigcontrast.png')";
+    }
     const mainDiv = document.getElementById("main");
     if (input != null) {
         let userDiv = document.createElement("div");
@@ -129,7 +137,7 @@ function addChatbotClose(){
 function openChatbot() {
     if(first){
         first=false;
-        speak(scriptDys[ctr]);
+        speak(scriptVis[ctr]);
     }
     let chatbot = document.getElementById("chatbot");
     var id = setInterval(frame, 3);
