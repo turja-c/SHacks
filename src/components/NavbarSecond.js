@@ -28,7 +28,7 @@ function NavbarSecond() {
                 type="search"
                 placeholder="Begin Your Search"
                 className="mr-2"
-                style={{width: '25rem', color: '#E2E8ED', height: '4.5rem', borderRadius: '1rem'}}
+                style={{width: '25rem', color: '#E2E8ED', height: '4.5rem', borderRadius: '1rem',}}
                 aria-label="Search"
               />
             <FontAwesomeIcon icon={["fas", "fa-search"]} />   
@@ -39,7 +39,8 @@ function NavbarSecond() {
             <Navbar style={{fontSize: '1.5rem', color: '#000'}}>Bank Your Way</Navbar> */}
             {/* </Row>
             <Button style={{marginLeft: '15rem', marginTop: '-10rem'}}/> */}
-            <Button style={{marginTop:'-6.5rem', marginRight: '-70rem', width: '20rem',  height: '4.5rem', backgroundColor: '#ED111A', borderColor: '#ED111A', borderRadius: '1rem'}}>
+            <Button style={{marginTop:'-6.5rem', marginRight: '-70rem', width: '20rem',  height: '4.5rem', backgroundColor: '#ED111A', borderColor: '#ED111A', borderRadius: '1rem'}}
+            href='/Design'>
               Sign In
             </Button>
               </Container>

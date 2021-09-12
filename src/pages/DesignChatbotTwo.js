@@ -95,74 +95,74 @@ export default function NavTabs() {
           style={{backgroundColor: 'red', width: '114.5rem', marginLeft: '-0.4rem', boxShadow:'2px 2px 4px #000000'}}
           className="container"
         >
-          <LinkTab label="About" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Team Loyal" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Mentor" href="/spam" {...a11yProps(2)} />
+          <LinkTab label="Greetings" href="/drafts" {...a11yProps(0)} />
+          <LinkTab label="Answers" href="/trash" {...a11yProps(1)} />
+          <LinkTab label="Follow ups" href="/spam" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <DesignChatbotTwo value={value} index={0}>
         <Board id="board-1" className="board">
                     <Card id="card-1" draggable="true">
-                    <h4 style={{color: 'white'}}>option 1</h4>
+                    <h4 style={{color: 'white'}}>Hey! Welcome to Scotiabnk, what can I help you with?</h4>
                     </Card>
                 </Board>
                 <Board id="board-2" className="board">
                     <Card id="card-2" draggable="true">
-                    <h4 style={{color: 'white'}}>option 2</h4>
+                    <h4 style={{color: 'white'}}>Welcome! How can I be of assistance?</h4>
                     </Card>
                 </Board>
                 <Board id="board-3" className="board">
                     <Card id="card-3" draggable="true">
-                    <h4 style={{color: 'white'}}>option 3</h4>
+                    <h4 style={{color: 'white'}}>Hi there! What are you looking to complete today?</h4>
                     </Card>
                 </Board>
                 <Board id="board-4" className="board">
                     <Card id="card-4" draggable="true">
-                    <h4 style={{color: 'white'}}>option 4</h4>
+                    <h4 style={{color: 'white'}}>Good to see you! What are you aiming to accomplish with scotiabank today?</h4>
                     </Card>
                 </Board>
       </DesignChatbotTwo>
       <DesignChatbotTwo value={value} index={1}>
       <Board id="board-5" className="board">
                     <Card id="card-5" draggable="true">
-                    <h4 style={{color: 'white'}}>option 5</h4>
+                    <h4 style={{color: 'white'}}>Thank you for sharing. Here are more details.</h4>
                     </Card>
                 </Board>
                 <Board id="board-6" className="board">
                     <Card id="card-6" draggable="true">
-                    <h4 style={{color: 'white'}}>option 6</h4>
+                    <h4 style={{color: 'white'}}>Transaction complete.</h4>
                     </Card>
                 </Board>
                 <Board id="board-7" className="board">
                     <Card id="card-7" draggable="true">
-                    <h4 style={{color: 'white'}}>option 7</h4>
+                    <h4 style={{color: 'white'}}>On it. Your request is marked complete.</h4>
                     </Card>
                 </Board>
                 <Board id="board-8" className="board">
                     <Card id="card-8" draggable="true">
-                    <h4 style={{color: 'white'}}>option 8</h4>
+                    <h4 style={{color: 'white'}}>Thank you for your answers. Here are possible answers to your question. </h4>
                     </Card>
                 </Board>
       </DesignChatbotTwo>
       <DesignChatbotTwo value={value} index={2}>
       <Board id="board-9" className="board">
                     <Card id="card-9" draggable="true">
-                    <h4 style={{color: 'white'}}>option 9</h4>
+                    <h4 style={{color: 'white'}}>Can I schedule a follow up call?</h4>
                     </Card>
                 </Board>
                 <Board id="board-10" className="board">
                     <Card id="card-10" draggable="true">
-                    <h4 style={{color: 'white'}}>option 10</h4>
+                    <h4 style={{color: 'white'}}>When are you looking to call back?</h4>
                     </Card>
                 </Board>
                 <Board id="board-11" className="board">
                     <Card id="card-11" draggable="true">
-                    <h4 style={{color: 'white'}}>option 11</h4>
+                    <h4 style={{color: 'white'}}>When should we expect your next payment?</h4>
                     </Card>
                 </Board>
                 <Board id="board-12" className="board">
                     <Card id="card-12" draggable="true">
-                    <h4 style={{color: 'white'}}>option 12</h4>
+                    <h4 style={{color: 'white'}}>Can I automate this process for you?</h4>
                     </Card>
                 </Board>
       </DesignChatbotTwo>
