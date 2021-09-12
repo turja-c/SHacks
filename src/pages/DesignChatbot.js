@@ -26,7 +26,7 @@ function DesignChatbot() {
                 <CardDeck>
                     <Row>
                         <Col>
-                      <div style={{boxShadow:'2px 2px 4px #000000', padding: '2rem', borderRadius: '2rem'}}>
+                    <div style={{boxShadow:'2px 2px 4px #000000', paddingBottom: '2rem', borderRadius: '2rem'}}>
                 <Tabs
                 defaultActiveKey="home"
                 transition={false}
@@ -151,7 +151,7 @@ function DesignChatbot() {
                 <Col>
                 
                 <h3 style={{marginRight: '80rem'}}>Drag and Drop options below</h3>
-                <h5 style={{marginRight: '63rem'}}>Drag and drop options.</h5>
+                <h5 style={{marginRight: '63rem'}}>Choose the options that fit the business model and create a customized chatbot.</h5>
                 <main className="flexbox" style={{boxShadow:'2px 2px 4px #000000', padding: '2rem', borderRadius: '2rem'}}>
 
                 <BoardFinal id="board-final" className="board" >
